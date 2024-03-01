@@ -1,0 +1,23 @@
+# python_version_3.10.1
+
+import argparse
+
+
+class MyClass:
+    def __init__(self):
+        pass
+
+    def start(self, arguments: dict):
+        pass
+
+    def load_resources(self):
+        pass
+
+
+if __name__ is '__main__':
+    parser = argparse.ArgumentParser('example program name', 'example long description')
+    parser.add_argument('-e', '--example',
+                        help='this is where usage instruction goes',
+                        default='example default argument if none given')
+    args = parser.parse_args()
+    MyClass().start(args.my_argument)
