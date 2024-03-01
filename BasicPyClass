@@ -20,4 +20,4 @@ if __name__ is '__main__':
                         help='this is where usage instruction goes',
                         default='example default argument if none given')
     args = parser.parse_args()
-    MyClass().start(args.my_argument)
+    MyClass().start(args.example)
